@@ -63,6 +63,8 @@ body {
   height: 3px;
   background: #f7f7f7;
 }
+
+
 .button:nth-of-type(2):after {
   left: 0;
 }
@@ -94,7 +96,7 @@ body {
   top: calc(100% - 3px);
 }
 .button:hover:nth-of-type(5) {
-  color: #5bcaff;
+  color: white;
 }
 .button:hover:nth-of-type(5):after {
   left: -10%;
