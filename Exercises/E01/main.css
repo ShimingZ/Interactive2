@@ -96,7 +96,7 @@ body {
   top: calc(100% - 3px);
 }
 .button:hover:nth-of-type(5) {
-  color: white;
+  color: #f7f7f7;
 }
 .button:hover:nth-of-type(5):after {
   left: -10%;
