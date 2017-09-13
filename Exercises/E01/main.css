@@ -653,15 +653,15 @@ body {
 }
 .button33:hover {
   animation-name: pulse;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: linear;
 }
 @keyframes pulse {
   25% {
-    transform: scale(1.1);
+    transform: scale(2.5);
   }
   75% {
-    transform: scale(0.9);
+    transform: scale(0.3);
   }
 }
 
