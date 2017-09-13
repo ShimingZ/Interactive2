@@ -658,7 +658,7 @@ body {
 }
 @keyframes pulse {
   25% {
-    transform: scale(2.5);
+    transform: scale(5.5);
   }
   75% {
     transform: scale(0.3);
