@@ -679,7 +679,7 @@ body {
 }
 .button34:hover {
   animation-name: pulse-grow;
-  animation-duration: 0.3s;
+  animation-duration: 0.8s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
