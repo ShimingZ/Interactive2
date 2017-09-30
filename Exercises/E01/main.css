@@ -172,7 +172,7 @@ body {
 .button:hover:nth-of-type(8) {
   -webkit-box-flex: 3;
       -ms-flex-positive: 3;
-          flex-grow: 3;
+          flex-grow: 10;
 }
 .button:hover:nth-of-type(8):after {
   width: 0%;
