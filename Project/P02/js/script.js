@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $(".CC").mouseover(function() {
-    	var thisElement = $(this);
+        var thisElement = $(this);
         thisElement.find(".stem1").toggleClass('stem1Hovered');
         thisElement.find(".stem1-j").toggleClass('stem1-jHovered');
         thisElement.find(".stem2").toggleClass('stem2Hovered');
