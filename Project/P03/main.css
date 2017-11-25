@@ -1,0 +1,25 @@
+/* reset padding and margins */
+
+* {
+	margin: 0px;
+	padding: 0px;
+
+}
+
+body {
+	background: white ; 
+
+}
+
+svg {
+    width: 100%;
+    position:fixed;
+    margin-left: 0px;
+    margin-right: 0px;
+
+
+}
+
+polygon:hover{
+fill:black;
+}
