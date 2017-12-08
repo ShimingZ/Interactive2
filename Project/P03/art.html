@@ -3,24 +3,10 @@
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
 
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <style>
     body {
         margin: 0;
     }
-
-
-    .nav {
-        position: fixed;
-        bottom: 60px;
-        display: block;
-        width: 250px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        text-align: center;
-    }
-
 
     .nav1 {
         position: fixed;
@@ -31,123 +17,136 @@
         right: 80px;
         top: 60px;
     }
-    .a1{
-    	position: absolute;
 
-    	top: -30px;
+    .a1 {
+        position: absolute;
 
-    }
-    .a1 a{
-
-    	text-decoration: none;
-    	color:black;
-    	line-height: 30px;
-    	font-size: 13px;
-    	font-family: 'Oswald'
-
+        top: -30px;
     }
 
-    .circle-button {
-        margin: 12px;
-        width: 20px;
-        height: 20px;
-        display: inline;
+    .a1 a {
+
+        text-decoration: none;
+        color: black;
+        line-height: 30px;
+        font-size: 13px;
+        font-family: 'Oswald'
     }
 
-    .white {
-        border: 2px solid black;
+    canvas {
+        display: block;
+        vertical-align: bottom;
     }
 
-    .box {
-        height: 700px;
-        background-color: white;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        letter-spacing: 1px;
-        font-size: 30px;
-        font-family: sans-serif;
-        text-align: center;
-
-        padding: 10% 25% 10% 25%;
-    }
-
-    img {
+    #particles-js {
+        position: absolute;
         width: 100%;
-        /*position: absolute;*/
+        height: 100%;
+        background-color: white;
+    }
+
+
+    .wrapper {
+
+        text-align: center;
+        left: 0;
+        bottom: 50px;
+        position: absolute;
+        width: 640px;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slides {
+        width: 800px;
+        height: 450px;
+        overflow: hidden;
+    }
+
+    .slides .slide {
+        width: 800px;
+        height: 450px;
+        float: left;
+    }
+
+    .buttons li {
+        width: 20px;
+        height: 3px;
+        border: 1px solid black;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .buttons li.active {
+        background: black;
+    }
+
+
+    .slides div:nth-of-type(1) {
+        background-image: url("assets/1.jpg");
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+
+    .slides div:nth-of-type(2) {
+        background-image: url("assets/2.jpg");
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+
+    .slides div:nth-of-type(3) {
+        background-image: url("assets/3.jpg");
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+
+    .slides div:nth-of-type(4) {
+        background-image: url("assets/4.jpg");
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+
+    .slides div:nth-of-type(5) {
+        background-image: url("assets/5.jpg");
+        background-repeat: no-repeat;
+        background-size: 80%;
     }
     </style>
-    <script>
-    $(document).ready(function() {
-
-        $("#btn-s1").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".s1").offset().top
-            }, 1000);
-        });
-
-        $("#btn-s2").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".s2").offset().top
-            }, 1000);
-        });
-
-        $("#btn-s3").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".s3").offset().top
-            }, 1000);
-        });
-
-        $("#btn-s4").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".s4").offset().top
-            }, 1000);
-        });
-
-        $("#btn-s5").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".s5").offset().top
-            }, 1000);
-        });
-
-        console.log($(".s5").offset());
-
-
-    });
-    </script>
 </head>
 
 <body>
+    <div id="particles-js"></div>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+    <script src="js/index.js"></script>
     <div class="nav1">
         <div class="a1">
-            <a href="">HOME</a >
+            <a href="file:///Users/zhangshiming/Desktop/Interactive2/Project/P03/home.html">HOME</a >
             <br>
-			<a href="">ARTWORK</a >
-    	</div>
-	</div>
+            <a href="file:///Users/zhangshiming/Desktop/Interactive2/Project/P03/art.html">ARTWORK</a >
+        </div>
+    </div>
 
-    <div class="nav">
-        <div class="circle-button white" id="btn-s1"></div>
-        <div class="circle-button white" id="btn-s2"></div>
-        <div class="circle-button white" id="btn-s3"></div>
-        <div class="circle-button white" id="btn-s4"></div>
-        <div class="circle-button white" id="btn-s5"></div>
+  <div class="wrapper">
+  
+  <div class="slides">
+    <div class="slidesContainer">
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
     </div>
-    <div class="box s1">
-        <img src="assets/1.jpg">
-    </div>
-    <div class="box s2">
-        <img src="assets/2.jpg">
-    </div>
-    <div class="box s3">
-        <img src="assets/3.jpg">
-    </div>
-    <div class="box s4">
-        <img src="assets/4.jpg">
-    </div>
-    <div class="box s5">
-        <img src="assets/5.jpg">
-    </div>
+  </div>
+  <ul class="buttons"></ul>
+  
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/art.js"></script>
+
+
 </body>
 
 </html>
