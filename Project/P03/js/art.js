@@ -1,4 +1,4 @@
-var slideTotal = $('.slides .slide').length,
+var slideTotal = $('.slides .slide').length(),
     slidesWidth = $('.slides .slide').width(),
     maxMargin = -slideTotal * slidesWidth + slidesWidth,
     pos = 0,
